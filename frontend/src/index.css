@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #020617;
+  color: aliceblue;
+}
+
+.app-root {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.header-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.header-subtitle {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.header-right {
+  text-align: right;
+}
+
+.simulator-url {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.reset-button {
+  margin-top: 8px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid #1d4ed8;
+  background: #0b1120;
+  color: #e5e7eb;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.reset-button:hover {
+  background: #020617;
+}
+
+.error-box {
+  padding: 10px;
+  border-radius: 8px;
+  background: #7f1d1d;
+  border: 1px solid #fecaca;
+  font-size: 13px;
+}
+
+.app-main {
+  display: grid;
+  grid-template-columns: 2fr 1.1fr;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.state-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.state-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.state-day {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.episode-info {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.episode-reason {
+  margin-left: 8px;
+  color: #f97316;
+}
+
+.countries-row {
+  display: flex;
+  gap: 12px;
+}
+
+.gift-row {
+  margin-top: 12px;
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.gift-label {
+  opacity: 0.7;
+  margin-right: 4px;
+}
+
+.gift-value {
+  font-weight: 600;
+}
+
+.agent-log {
+  background: #020617;
+  border-radius: 16px;
+  padding: 14px;
+  border: 1px solid #1e293b;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.55);
+  max-height: 75vh;
+  overflow: auto;
+}
+
+.agent-log-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  position: sticky;
+  top: 0;
+  background: #020617;
+  padding-bottom: 8px;
+  z-index: 10;
+}
+
+.agent-log-title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.agent-log-count {
+  font-size: 11px;
+  opacity: 0.7;
+}
+
+.agent-log-loading {
+  font-size: 13px;
+}
+
+.agent-log-empty {
+  font-size: 13px;
+  opacity: 0.8;
+  text-align: center;
+  padding: 20px;
+}
+
+.agent-log-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 13px;
+}
